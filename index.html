@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
+    <title>Boogable</title>
+</head>
+<body>
+<!-- <style>
+    .body {
+    position: relative;
+    left: 11em;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.option li {
+    list-style: none;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+    100%
+    {
+        top: -360px;
+    }
+}
+.option li span
+{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+}
+
+.option li span:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background #111;
+    border-left: 2px solid #face30;
+    animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+    40% 60%{
+        left: calc(100% + 30px);
+    }
+    100%{
+        left:0;
+    }
+} -->
+
+</style>
+
+    <header>
+        <div class="hamburger" id="hamburger" onclick="toggleMobileMenu(this)">
+            <img src="images/menu.png" alt="menu" class="hamburger_btn">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Profolio</a></li>
+                <li><a href="#">About</a></li>
+                <div class="divider"></div>
+                <div class="lower-menu">
+                    <li><a href="#">Blog</a></li>
+                    <li> <a href="#">Carrers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="logo">
+            <img src="images/logo.png" alt="TMS">
+        </div>
+        <nav>
+            <div class="navbar">
+                <ul class="links">
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Profolio</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li> <a href="#">Carrers</a></li>
+                    <li><a href="#" class="contact">Contact</a></li>
+                </ul>
+            </div>
+            
+        
+        </nav>
+        
+    </header>
+    <section class="showcase">
+        <div>
+            <span class="display-text">We build great apps </span>
+        </div>
+        <span class="display-text2">with PHP.</span>
+        <!-- <div class="body">
+            <ul class="option">
+                <li>Amazon Server</li>
+                <li>java</li>
+                <li>Symfony</li>
+                <li>Node.js.</li>
+                <li>React</li>
+                <li>Vue.js</li>
+                <li>Angular</li>
+            </ul>
+        </div> -->
+        <h1>Top-notch digital products from an app development <br> with a focus on your online business <br>profitability.</h1>
+        <div>.</div>
+        <h1 class="button">Request a free consultation</h1>
+        <div class="img">
+            <img src="images/backgroundf.svg" alt="img">
+        </div>
+       
+    </section>
+    <section class="testimony">
+            <div class="second-sec">
+                <p>Lease expertise from a world-class team of software engineers, designers, quality assurance specialists and project managers, working with clients globally since 2014, ranging from early-stage startups to large financial institutions.</p>
+                <p class="short">WE BUILD TECH SOLUTIONS LIKE</p>
+            </div>
+            <div class="companies">
+                <img src="images/ADVISE.png" alt="advice">  
+                <img src="images/alice.png" alt="images">  
+                <img src="images/amelia.png" alt="images">  
+                <img src="images/eserto.png" alt="images">  
+                <img src="images/geo1.png" alt="images">  
+                <img src="images/gravity_forms.png" alt="images">
+            </div>
+            <div class="companies_2">
+                <img src="images/ideabuddy.png" alt="images">  
+                <img src="images/PREpare.png" alt="images">  
+                <img src="images/report_builder.png" alt="img">  
+                <img src="images/wpdata.png" alt="img">
+                <img src="images/trafft.svg" alt="traffic">
+                <img src="images/vpm.png" alt="vpm">
+            </div>
+    </section>
+<script>
+    const hamburger_btn = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu')
+
+    hamburger_btn.addEventListener('click', function () {
+        hamburger_btn.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+    });
+</script>
+
+
+    
+</body>
+</html>
